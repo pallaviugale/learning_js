@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // arithmatic operator
+        // +,-,*,%,/,++,--,**
+
+        var a = 17;
+        var b = 3;
+        var c = a + b;//20
+
+        c++;//21
+        c++;//22
+        c--;//21
+        c++;//22
+        c--;//21
+        c++;//22
+        document.write(c);
+        console.log(c);
+
+        var a = 20;
+        var b = 5;
+        var c = a - b;
+
+        c++;
+        c++;
+        c--;
+        c++;
+        c--;
+        c++;
+        document.write(c);
+        console.log(c);
+
+        var a = 20;
+        var b = 5;
+        var c = a * b;
+
+        c++;
+        c++;
+        c--;
+        c++;
+        c--;
+        c++;
+        document.write(c);
+        console.log(c);
+
+        var a = 20;
+        var b = 5;
+        var c = a / b;
+
+        c++;
+        c++;
+        c--;
+        c++;
+        c--;
+        c++;
+        document.write(c);
+        console.log(c);
+
+        var a = 20;
+        var b = 5;
+        var c = a ** b;
+
+
+        document.write(c);
+        console.log(c);
+
+
+
+
+    </script>
+
+    <script>
+        //assignment operator
+        //=,-=,+=,*=
+
+        var x = 10;
+        var y = 3;
+        //x=x+y;
+
+        x += y;
+        document.write(x, "<br>");
+        document.write(y);
+
+        var x = 15;
+        var y = 5;
+        //x=x-y;
+
+        x -= y;
+        document.write(x, "<br>");
+        document.write(y, "<br>");
+
+        var x = 10;
+        var y = 3;
+        //x=x*y;
+
+        x *= y;
+        document.write(x, "<br>");
+        document.write(y, "<br>");
+
+        var x = 10;
+        var y = 3;
+        //x=x=y;
+
+        x = y;
+        document.write(x, "<br>");
+        document.write(y, "<br>");
+
+        //single operand =unary
+        //double operand=binary
+
+
+
+
+    </script>
+
+    <script>
+        //comparison operator
+
+        //<,>,<=,>=,==,!=,===
+
+        var p = 13;
+        var q = 14;
+        if (p > q) {
+            document.write("true", "<br>");
+        } else {
+            document.write("false", "<br>");
+        }
+
+        var p = 13;
+        var q = 14;
+        if (p < q) {
+            document.write("true", "<br>");
+        } else {
+            document.write("false", "<br>");
+        }
+
+        var p = 13;
+        var q = 14;
+        if (p = q) {
+            document.write("true", "<br>");
+        } else {
+            document.write("false", "<br>");
+        }
+
+        var p = 13;
+        var q = 14;
+        if (p >= q) {
+            document.write("true", "<br>");
+        } else {
+            document.write("false", "<br>");
+        }
+
+        var p = 13;
+        var q = 14;
+        if (p <= q) {
+            document.write("true", "<br>");
+        } else {
+            document.write("false", "<br>");
+        }
+
+        var p = 14;
+        var q = "14";
+        if (p == q) {
+            document.write("true", "<br>");//only checks value
+        } else {
+            document.write("false", "<br>");
+        }
+
+        var p = 14;
+        var q = "14";
+        if (p === q) {
+            document.write("true", "<br>");//checks value and datatype
+        } else {
+            document.write("false", "<br>");
+        }
+
+
+        var p = "14";
+        var q = "14";
+        if (p === q) {
+            document.write("true", "<br>");//checks value and datatype
+        } else {
+            document.write("false", "<br>");
+        }
+
+    </script>
+
+    <script>
+        //arithmatic operator
+
+        var age=19;
+        if(age>=18 && age<=100){
+            document.write("Eligible for voting","<br>");
+        }else{
+document.write(" Not Eligible for voting","<br>");
+        }
+
+        var day="sunday";
+
+        if(day==="saturday" || day=== "sunday"){
+            document.write("Its Weekend","<br>");
+        }else{
+            document.write("Its Week days","<br>");
+        }
+
+         var day="monday";
+
+        if(day==="saturday" || day=== "sunday"){
+            document.write("Its Weekend","<br>");
+        }else{
+            document.write("Its Week days","<br>");
+        }
+    </script>
+
+    <script>
+        //ternary operator
+
+        let age=18;
+        let eligibility = (age>=18) ? "Eligible for voting" : "Not Eligible";
+        document.write(eligibility);
+        
+    </script>
+</body>
+
+</html>
