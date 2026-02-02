@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- array modify and delete -->
+     <script>
+        var a= ["pallavi",21,"female","software engineer"];
+        document.write(a,"<br>");
+
+        a[1]=32;//update value
+        document.write(a,"<br>");
+
+        delete  a[3];//delete index value
+        document.write(a,"<br>");
+
+
+     </script>
+
+     <script>
+        //sort nd reverse
+
+        var b = ["sahil","neha","arbaj","pallavi","sukanya"];
+        document.write(b,"<br>");
+
+        b.sort();//a to z asc
+        document.write(b,"<br>");
+
+        b.reverse();//reverse
+        document.write(b,"<br>");
+
+
+
+     </script>
+
+     <script>
+        //pop and push
+        var c = ["sahil","neha","arbaj","pallavi","sukanya","shweta"];
+         document.write(c,"<br>");
+
+         c.pop();
+         c.pop();
+         c.pop();
+         document.write(c,"<br>");
+
+         c.push("pritam");
+         c.push("tanuja");
+         document.write(c,"<br>");
+
+         </script>
+
+         <script>
+            //shift nd unshift
+            var d = ["sahil","neha","arbaj","pallavi","sukanya","shweta"];
+            document.write(d,"<br>");
+
+            d.shift();
+             document.write(d,"<br>");
+
+             d.unshift("kalyani");
+             document.write(d,"<br>");
+
+
+
+         </script>
+
+         <script>
+            //concat or join
+             var a= ["pallavi",21,"female","software engineer"];
+              var b = ["sahil","neha","arbaj","pallavi","sukanya"];
+              var x=["mayur","chandani","gaurav","pranali","suyash"];
+
+              var c=a.concat(b,x);
+               document.write(c,"<br>");
+
+            //    var d=c.concat(x);
+            //     document.write(d,"<br>");
+
+               var d=c.join("/");
+                document.write(d,"<br>");
+
+             </script>
+
+
+   
+</body>
+</html>

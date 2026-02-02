@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+  <div class="mb-3">
+    <input type="number" id="num1" class="form-control" placeholder="First number">
+  </div>
+
+  <div class="mb-3">
+    <input type="number" id="num2" class="form-control" placeholder="Second number">
+  </div>
+
+  <div class="d-flex justify-content-between mb-3">
+    <button type="button" class="btn btn-primary" onclick="setOperation('+')">+</button>
+    <button type="button" class="btn btn-primary" onclick="setOperation('-')">-</button>
+    <button type="button" class="btn btn-primary" onclick="setOperation('')"></button>
+    <button type="button" class="btn btn-primary" onclick="setOperation('/')">/</button>
+  </div>
+
+  <input id="result" class="form-control" placeholder="Result" readonly>
+</form>
+
+<script>
+function setOperation(op) {
+  let a = Number(document.getElementById("num1").value);
+  let b = Number(document.getElementById("num2").value);
+  let res;
+
+  if (op === "+") res = a + b;
+  else if (op === "-") res = a - b;
+  else if (op === "*") res = a * b;
+  else if (op === "/") res = a / b;
+
+  document.getElementById("result").value = res;
+}
+</script>
+</body>
+</html>
