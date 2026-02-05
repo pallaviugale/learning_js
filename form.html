@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }.form-container {
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+.gender {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.gender label {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+.terms {
+  margin: 10px 0 15px;
+  font-size: 14px;
+}
+
+button {
+  width: 50%;
+  padding: 12px;
+  background: linear-gradient(to right, #1e73ff, #0056d6);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Contact Us</h2><form>
+  <label>Name:</label>
+  <input type="text" placeholder="Your name" required />
+
+  <label>Email:</label>
+  <input type="email" placeholder="Your email" required />
+
+  <label>Mobile Number:</label>
+  <input type="tel" placeholder="Your mobile number" required />
+
+  <label>Password:</label>
+  <input type="password" placeholder="Enter password" required />
+
+  <label>Confirm Password:</label>
+  <input type="password" placeholder="Confirm password" required />
+
+  <label>Message:</label>
+  <textarea placeholder="Your message"></textarea>
+
+  <div class="gender">
+    <strong>Gender:</strong><br />
+    <label><input type="radio" name="gender" /> Male</label>
+    <label><input type="radio" name="gender" /> Female</label>
+    <label><input type="radio" name="gender" /> Other</label>
+  </div>
+
+  <div class="terms">
+    <label>
+      <input type="checkbox" required /> I agree to the terms & conditions
+    </label>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+  </div>
+</body>
+</html>

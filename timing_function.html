@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.clock_id{
+    background-color: aqua;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: brown;
+}
+
+.clock{
+    color: blueviolet;
+    font-size: 70px;
+    text-align: center;
+    
+}
+    </style>
+</head>
+<body>
+    <h1 class="clock">Digital Clock</h1>
+    <h2 class="clock_id"id="clock"> </h2>
+
+    
+    
+
+    <script>
+        function showTime(){
+            let now = new Date;
+            let time = now.toLocaleTimeString();
+            document.getElementById("clock").innerHTML=time;
+            setInterval(showTime,1000);
+
+        }
+
+        showTime();
+
+    </script>
+
+
+<p id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint accusamus error sapiente deleniti? Officia ab esse, molestias eveniet excepturi laborum neque pariatur repellat nemo expedita error earum similique eos illo.</p>
+
+<script>
+    setTimeout(function(){
+        document.getElementById("msg").innerHTML = "<h1>hello its pallavi</h1>";
+    },5000)
+</script>
+
+<h1>counter</h1>
+<h3 id="count">0</h3>
+
+<button onclick="startCounter()">Start</button>
+<button onclick="stopCounter()">Stop</button>
+<button onclick="startInterval()">reset</button>
+
+<script>
+    let count = 0;
+    let counter=null;
+    function startCounter(){
+        if(counter=== null){
+            counter = setInterval(function(){
+                count++;
+                document.getElementById("count").innerHTML = count;
+
+            },1000)
+        }
+    }
+
+    function stopCounter(){
+        clearInterval(counter);
+        counter=null;
+    }
+
+    let interval;
+
+function 
+</script>
+
+
+</body>
+</html>
